@@ -1,0 +1,3 @@
+G:\E_drive_data\GitHubProjects\RandomQuoteGenerator\backend> python app.py
+
+G:\E_drive_data\GitHubProjects\RandomQuoteGenerator\frontend\random-quote-generator> npm start

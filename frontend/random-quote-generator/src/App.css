@@ -1,0 +1,123 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out; /* Smooth transition for background change */
+}
+
+.quote-container {
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black background to make text stand out */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95); /* Start slightly smaller */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1); /* End at full size */
+  }
+}
+
+.quote-text {
+  animation: fadeIn 1s ease-in-out;  /* Apply the animation to quote text */
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  animation: fadeIn 1s ease-in-out;
+}
+
+.new-quote-btn {
+  font-family: 'Roboto', sans-serif;       /* Clean font for buttons */
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-quote-btn:hover {
+  background-color: #ff3b3f;
+}
+
+@media (max-width: 768px) {
+  .quote-text {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+.video-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  max-width: 400px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.like-button {
+  margin-top: 10px;
+}
+
+.like-button button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.like-button button:hover {
+  background-color: #ff3b3f;
+}
+
+.App {
+  text-align: center;
+}
+
+.quote-text {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.refresh-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.refresh-button:hover {
+  background-color: #ff3b3f;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
